@@ -1,2 +1,2 @@
 # wechatrobot
-Wechat Robot writing in python for sending alarm or notify messages to specified user.
+Wechat Robot written in python for sending messages (alarm or notify messages)) to specified users.

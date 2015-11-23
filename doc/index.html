@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to JLBot’s Documentation! &mdash; JLBot 0.1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="JLBot 0.1.0 documentation" href="#"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="#" class="icon icon-home"> JLBot
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="simple">
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">JLBot</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>Welcome to JLBot&#8217;s Documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="welcome-to-jlbot-s-documentation">
+<h1>Welcome to JLBot&#8217;s Documentation!<a class="headerlink" href="#welcome-to-jlbot-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+</ul>
+<div class="section" id="module-mpclient">
+<span id="mpclient-py"></span><h2>mpclient.py<a class="headerlink" href="#module-mpclient" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="mpclient.MPClient">
+<em class="property">class </em><code class="descclassname">mpclient.</code><code class="descname">MPClient</code><a class="headerlink" href="#mpclient.MPClient" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="mpclient.MPClient.get_cookie">
+<code class="descname">get_cookie</code><span class="sig-paren">(</span><em>res</em><span class="sig-paren">)</span><a class="headerlink" href="#mpclient.MPClient.get_cookie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get login cookies which must be added to headers when call mpfunctions.
+Cookies params include: data_bizuin, data_ticket, slave_user, slave_sid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpclient.MPClient.get_token">
+<code class="descname">get_token</code><span class="sig-paren">(</span><em>return_val</em><span class="sig-paren">)</span><a class="headerlink" href="#mpclient.MPClient.get_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get token id when login.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpclient.MPClient.login">
+<code class="descname">login</code><span class="sig-paren">(</span><em>email=None</em>, <em>password=None</em><span class="sig-paren">)</span><a class="headerlink" href="#mpclient.MPClient.login" title="Permalink to this definition">¶</a></dt>
+<dd><p>Login in Wechat MP Web Page.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpclient.MPClient.logout">
+<code class="descname">logout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpclient.MPClient.logout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpclient.MPClient.setheaders">
+<code class="descname">setheaders</code><span class="sig-paren">(</span><em>referer</em>, <em>cookie=None</em><span class="sig-paren">)</span><a class="headerlink" href="#mpclient.MPClient.setheaders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define http request headers.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mpfunctions">
+<span id="mpfunctions-py"></span><h2>mpfunctions.py<a class="headerlink" href="#module-mpfunctions" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="mpfunctions.Get_content">
+<em class="property">class </em><code class="descclassname">mpfunctions.</code><code class="descname">Get_content</code><span class="sig-paren">(</span><em>filter_tag=None</em>, <em>filter_attributes=None</em><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.Get_content" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="mpfunctions.Get_content.handle_data">
+<code class="descname">handle_data</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.Get_content.handle_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpfunctions.Get_content.handle_endtag">
+<code class="descname">handle_endtag</code><span class="sig-paren">(</span><em>tag</em><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.Get_content.handle_endtag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpfunctions.Get_content.handle_starttag">
+<code class="descname">handle_starttag</code><span class="sig-paren">(</span><em>tag</em>, <em>attributes</em><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.Get_content.handle_starttag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="mpfunctions.MPFunctions">
+<em class="property">class </em><code class="descclassname">mpfunctions.</code><code class="descname">MPFunctions</code><a class="headerlink" href="#mpfunctions.MPFunctions" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="mpfunctions.MPFunctions.get_chat_log">
+<code class="descname">get_chat_log</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.MPFunctions.get_chat_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get chat log.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpfunctions.MPFunctions.get_userinfo">
+<code class="descname">get_userinfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.MPFunctions.get_userinfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get wechat fans info.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpfunctions.MPFunctions.send_audio">
+<code class="descname">send_audio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.MPFunctions.send_audio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpfunctions.MPFunctions.send_pic">
+<code class="descname">send_pic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.MPFunctions.send_pic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpfunctions.MPFunctions.send_text">
+<code class="descname">send_text</code><span class="sig-paren">(</span><em>fans=[]</em>, <em>message=''</em><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.MPFunctions.send_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send text messages.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mpfunctions.MPFunctions.send_video">
+<code class="descname">send_video</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.MPFunctions.send_video" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mpfunctions.MPFunctions.set_core_headers">
+<code class="descname">set_core_headers</code><span class="sig-paren">(</span><em>req</em>, <em>referer</em>, <em>cookie</em><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.MPFunctions.set_core_headers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="mpfunctions.filter_emoji">
+<code class="descclassname">mpfunctions.</code><code class="descname">filter_emoji</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.filter_emoji" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="mpfunctions.len_zh">
+<code class="descclassname">mpfunctions.</code><code class="descname">len_zh</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.len_zh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="mpfunctions.timestamp_datetime">
+<code class="descclassname">mpfunctions.</code><code class="descname">timestamp_datetime</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#mpfunctions.timestamp_datetime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Leon Lee &lt;lee.leon0519@gmail.com&gt;.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
